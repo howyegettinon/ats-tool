@@ -6,9 +6,9 @@ const insecureAgent = new https.Agent({
 })
 
 const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-  httpAgent: insecureAgent
-})
+  apiKey: process.env.OPENAI_API_KEY, // NOT NEXT_PUBLIC_*
+});
+
 
 export async function analyzeResume(resumeText) {
   try {
