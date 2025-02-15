@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Sparkles } from '../components/Sparkles'
+import Sparkles from '../components/Sparkles';
 
 export default function Home() {
   const [resume, setResume] = useState('')
