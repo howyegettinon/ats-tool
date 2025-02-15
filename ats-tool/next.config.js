@@ -1,5 +1,7 @@
-module.exports = {
-  env: {
-    NEXT_PUBLIC_ANALYSIS_ENABLED: process.env.NEXT_PUBLIC_ANALYSIS_ENABLED,
-  },
-}
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  // Remove experimental.serverActions entirely
+  output: 'standalone' // Recommended for Render deployments
+};
+
+module.exports = nextConfig;
